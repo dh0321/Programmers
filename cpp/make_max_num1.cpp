@@ -37,10 +37,23 @@ int solution(vector<int> numbers) {
 
 int solution(vector<int> numbers) {
     int answer = 0;
-    
-    sort(numbers.begin(), numbers.end());
+
     sort(numbers.rbegin(), numbers.rend());
     answer = numbers[0] * numbers[1];
   
     return answer;
 } */
+
+
+/* Answer 4
+
+int solution(vector<int> numbers) {
+    int answer = 0;
+    
+    sort(numbers.begin(), numbers.end(), greater<int>());
+    //sort(numbers.begin(), numbers.end(), compare);
+    answer = numbers[0] * numbers[1];
+    
+    return answer;
+} */
+    
